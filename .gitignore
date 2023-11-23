@@ -7,6 +7,10 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# OS generated files
+.DS_Store
+Thumbs.db
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -79,6 +83,10 @@ web_modules/
 .env.production.local
 .env.local
 
+# IDE / Editor directories
+.idea/
+.vscode/
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
@@ -86,6 +94,12 @@ web_modules/
 # Next.js build output
 .next
 out
+
+# Cache directories (if applicable)
+.next/cache/
+
+# Dependency directories
+node_modules/
 
 # Nuxt.js build / generate output
 .nuxt
