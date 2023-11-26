@@ -19,7 +19,7 @@ export default function LandingPage()
             <div className="intro">Amir H. Khodabakhsh</div>
             <div className="subtitle">Aeronautics, Deep Learning, Stochastic Processes</div>
             <div className="subtitle">Multi-Disciplinary Optimization, Nonlinear Control</div>
-            <div className="tagline">This is just a landing page, wait for more!</div>
+            <div className="tagline">This is a landing page, wait for more!</div>
             
             <div className="icons-social">
                 <a target="_blank"
