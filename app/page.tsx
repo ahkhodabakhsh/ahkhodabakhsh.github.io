@@ -1,9 +1,21 @@
 import LandingPage from "@/components/LandingPage/LandingPage"
+import ParticlesBackground from "@/components/ParticlesBackground/ParticlesBackground"
 
 export default function Home() {
   return (
-    <main> 
-      <LandingPage />
+    <main className="w-full h-full mx-auto my-auto p-0">
+      <div className="relative overflow-hidden">
+        <ParticlesBackground />
+      </div>
+      <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center w-11/12 h-5/6 mx-auto my-auto backdrop-blur-sm bg-black bg-opacity-5 rounded-xl ">
+          <LandingPage />
+        </div>
+      </div>
+      
+      
+      
+      
     </main>
   )
 }

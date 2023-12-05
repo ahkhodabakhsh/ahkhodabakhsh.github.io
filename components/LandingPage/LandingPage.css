@@ -1,29 +1,29 @@
 /* Typography */
 
-html {
+.landing-page {
 	font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 576px) {
-	html {
+	.landing-page {
 		font-size: 14px;
 	}
 }
 
 @media (min-width: 768px) {
-	html {
+	.landing-page {
 		font-size: 16px;
 	}
 }
 
 @media (min-width: 992px) {
-	html {
+	.landing-page {
 		font-size: 18px;
 	}
 }
 
 @media (min-width: 1200px) {
-	html {
+	.landing-page {
 		font-size: 20px;
 	}
 }
@@ -34,33 +34,33 @@ html {
 
 /* Custom Styles */
 
-main {
+.landing-page {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	justify-content: center;
 	padding: 0 30px;
 	text-align: center;
 }
 
-main > .intro {
+.landing-page > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 5.75em;
 	font-weight: 600;
 }
 
-main > .subtitle {
+.landing-page > .subtitle {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 1.75em;
 	font-weight: 300;
 	padding-bottom: 2.4rem;
 }
 
-main > .tagline {
+.landing-page > .tagline {
 	border-top: 1px solid black; 
 	padding-top: 2.4rem;
 	font-size: 2.3rem;
-	margin: 1.5rem 0;
+	margin: 1.rem 0;
 	font-weight: 10;
 }
 
@@ -85,7 +85,7 @@ main > .tagline {
 
 /* Minimal CSS Reset */
 
-html {
+.landing-page {
     box-sizing: border-box;
     font-size: 12px;
   }
@@ -94,11 +94,6 @@ html {
     box-sizing: inherit;
   }
   
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
   
   ol, ul {
     list-style: none;

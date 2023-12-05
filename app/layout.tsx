@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ fontFamily: 'Inter, sans-serif' }}>
+      <body style={{ fontFamily: 'Inter, sans-serif' }} className="w-screen h-screen p-0">
         {children}
       </body>
     </html>

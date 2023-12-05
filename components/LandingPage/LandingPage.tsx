@@ -15,7 +15,7 @@ const iconSize = "4x";
 export default function LandingPage()
 {
     return (
-        <>
+        <div className="landing-page">
             <div className="intro">Amir H. Khodabakhsh</div>
             <div className="subtitle">Aeronautics, Deep Learning, Stochastic Processes</div>
             <div className="subtitle">Multi-Disciplinary Optimization, Nonlinear Control</div>
@@ -87,6 +87,7 @@ export default function LandingPage()
                 </a>
                 
             </div>
-        </>
+            
+        </div>
     )
 }
