@@ -9,6 +9,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        '80p': '80%',
+        '90p': '90%',
+        '95p': '95%',
+        '97p': '97%',
+      },
+      height:{
+        '80p': '80%',
+        '90p': '90%',
+        '95p': '95%',
+        '97p': '97%',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
