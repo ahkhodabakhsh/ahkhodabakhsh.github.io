@@ -1,14 +1,14 @@
 {
     "basics": {
         "name": "Amir H. Khodabakhsh",
-        "label": "Research Scientist in Deep Learning, Aeronautics, and Nonlinear Stochastic Dynamics",
+        "label": "Deep Learning & Stochastic Dynamics Researcher",
         "email": "a.h.Khodabakhsh@gmail.com",
-        "phone": "(XXX) XXX-XXXX",
-        "picture": "jl.png",
+        "phone": "(+98 912) XXX-XXXX",
+        "picture": "https://avatars.githubusercontent.com/ahkhodabakhsh",
         "x_title": "...",
-        "job": "Research Scientist",
-        "description": "I'm Amir, a young scientist looking for new opportunities.",
-        "summary": "The summary will go here",
+        "job": "Researcher",
+        "description": "With a strong background in nonlinear stochastic dynamics, I possess expertise in deep learning, aero-servo-elasticity, control, estimation, uncertainty quantification, and MDO. My passion for advanced scientific topics drives my commitment to learning, teaching, and contributing to the scientific community. My skill set encompasses computer systems, dynamic systems analysis, complemented by a deep understanding of probability, control, and optimization theories. Throughout my studies, I have gained valuable experience and published several papers in peer-reviewed journals. As a dedicated researcher, I am committed to continuing my scientific journey for the betterment of society.",
+        "summary": "I'm Amir, a young scientist looking for new opportunities.",
         "keywords": "personal,website,portfolio,template,kit,amir,khodabakhsh,ahkhodabakhsh,scientist,ML,DL,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp",
         "url": "https://ahkhodabakhsh.github.io",
         "location": {
@@ -19,6 +19,20 @@
             "countryCode": "XXX",
             "region": "XXXX"
         },
+        "contact":[
+            {
+                "network": "Skype",
+                "username": "ahkhodabakhsh",
+                "url": "https://join.skype.com/invite/OiDAcveMp2uC",
+                "x_icon": "Skype"
+            },
+            {
+                "network": "Telegram",
+                "username": "ahkhodabakhsh",
+                "url": "https://join.skype.com/invite/OiDAcveMp2uC",
+                "x_icon": "Skype"
+            }
+        ],
         "profiles": [
             {
                 "network": "Google",
@@ -40,6 +54,35 @@
             }
         ]
     },
+    "experiences": [
+        {
+            "company": "Sharif University of Technology",
+            "position": "Research Assistant",
+            "website": "https://www.sharif.edu/",
+            "startDate": "2017-09-01",
+            "endDate": "2023-09-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        },
+        {
+            "company": "Sharif University of Technology",
+            "position": "Research Assistant",
+            "website": "https://www.sharif.edu/",
+            "startDate": "2014-09-01",
+            "endDate": "2016-09-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        },
+        {
+            "company": "K. N. Toosi University of Technology",
+            "position": "Research Assistant",
+            "website": "https://www.kntu.ac.ir/",
+            "startDate": "2012-09-01",
+            "endDate": "2014-09-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        }
+    ],
     "work": [
         {
             "company": "Company",
@@ -64,12 +107,36 @@
     ],
     "education": [
         {
-            "institution": "University",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "gpa": "4.0",
+            "institution": "Sharif University of Technology",
+            "institutionURL": "https://www.sharif.edu/",
+            "area": "Aeronautics and Astronautics (Flight Dynamics and Control)",
+            "studyType": "Ph.D.",
+            "startDate": "2017",
+            "endDate": "2023",
+            "gpa": "x.x",
+            "thesis": "Development of a Smart Learning-Based Distributed Load Alleviation System for Future Generation of Aeroelastic Wings",
+            "courses": ["DB1101 - Basic SQL"]
+        },
+        {
+            "institution": "Sharif University of Technology",
+            "institutionURL": "https://www.sharif.edu/",
+            "area": "Aeronautics and Astronautics (Flight Dynamics and Control)",
+            "studyType": "M.Sc.",
+            "startDate": "2014",
+            "endDate": "2016",
+            "gpa": "x.x",
+            "thesis": "Reliability-Based Multidisciplinary Design Optimization of an Aeroelastic Projectile",
+            "courses": ["DB1101 - Basic SQL"]
+        },
+        {
+            "institution": "K. N. Toosi University of Technology",
+            "institutionURL": "https://www.kntu.ac.ir/",
+            "area": "Aeronautics and Astronautics",
+            "studyType": "B.Sc.",
+            "startDate": "2009",
+            "endDate": "2014",
+            "gpa": "x.x",
+            "thesis": "Design and Implementation of A Hardware-In-the-Loop Testbed for An Attitude Control System",
             "courses": ["DB1101 - Basic SQL"]
         }
     ],

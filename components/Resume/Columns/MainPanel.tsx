@@ -1,14 +1,33 @@
+import { Grid } from "@mui/material";
 import EducationExperience from "../Cards/EducationExperience";
 import Publications from "../Cards/Publications";
-import Skills from "../Cards/Skills";
+import Skills from "../Cards/Skills/Skills";
 import Interests from "../Cards/Interests";
+import TeachingExperience from "../Cards/TeachingExperience";
+import Copyright from "../Cards/Copyright";
+
+
 export default function MainPanel(){
     return(
-        <div id="resume-main-body" className="flex flex-1 flex-col w-9/12 h-full">
-            <EducationExperience />
-            <Publications />
-            <Skills />
-            <Interests />
-        </div>
+        <Grid container direction="column" id="main-panel">
+            <Grid item xs={12} id="main-panel-c1">
+                <EducationExperience/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c2">
+                <Publications/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c3">
+                <Skills/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c4">
+                <TeachingExperience/>
+            </Grid>
+            {/* <Grid item xs={12} id="main-panel-c4">
+                <Interests/>
+            </Grid> */}
+            <Grid item xs={12} id="copyright">
+                <Copyright/>
+            </Grid>
+        </Grid>
     )
 }

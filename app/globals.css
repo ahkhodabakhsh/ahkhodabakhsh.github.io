@@ -3,9 +3,24 @@
 @tailwind utilities;
 
 :root {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-size: 16px;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size: 12px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +40,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+div::-webkit-scrollbar {
+  width: 2px; /* Change scrollbar width */
+  background-color: #000000; /* Change track color */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #333333; /* Change thumb color */
+  border-radius: 1px; /* Add rounded corners */
+}
+

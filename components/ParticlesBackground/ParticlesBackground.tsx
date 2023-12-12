@@ -7,7 +7,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 
 export default function ParticlesBackground() {
     const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
+        // console.log(engine);
 
         // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -17,7 +17,7 @@ export default function ParticlesBackground() {
     }, []);
 
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        console.log(container);
+        // console.log(container);
     }, []);
     return (
         <div className="relative overflow-hidden">
@@ -31,12 +31,13 @@ export default function ParticlesBackground() {
                         zIndex: -1,
                     },
                     background: {
-                        // color: {
-                        //     value: "#0d47a1",
-                        // },
-                        image: "radial-gradient(#0d47a1, #000)", // warm Red: #4a0000, blue: #0d47a1
+                        color: {
+                            value: "transparent",
+                        },
+                        // image: "radial-gradient(#0d47a1, #000)", // warm Red: #4a0000, blue: #0d47a1
+                        // image: "localhost:3000/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg",
                     },
-                    fpsLimit: 60,
+                    fpsLimit: 34,
                     interactivity: {
                         events: {
                             onClick: {
@@ -97,7 +98,7 @@ export default function ParticlesBackground() {
                             value: 80,
                         },
                         opacity: {
-                            value: 0.99,
+                            value: 1,
                         },
                         shape: {
                             type: "circle",
@@ -106,6 +107,7 @@ export default function ParticlesBackground() {
                             value: { min: 1, max: 4 },
                         },
                     },
+                    opacity: 0.5,
                     detectRetina: true,
                 }}
             />

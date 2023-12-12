@@ -4,11 +4,9 @@ import "@fontsource/roboto";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
-import { CssBaseline } from "@mui/material";
 
 import Resume from "@/data/resume.json"
 import Settings from "@/data/settings.json"
-// import Navbar from "@/components/Navbar"
 
 import './globals.css'
 
@@ -26,8 +24,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="flex flex-1 w-full h-full">
-      <body style={{ fontFamily: 'Inter, sans-serif' }} className="w-full h-full p-0">
+    <html lang="en">
+      <body style={{ 
+                     fontFamily: 'Roboto, sans-serif',
+                     backgroundColor: "black",
+                     backgroundImage: "url('/BG-Tuned-Blur.jpg')",
+                     backgroundSize: "cover",
+                     backgroundRepeat: "no-repeat",
+                     backgroundAttachment: "fixed",
+                    //  filter: "blur(5px)",
+                     }}>
         {children}
       </body>
     </html>

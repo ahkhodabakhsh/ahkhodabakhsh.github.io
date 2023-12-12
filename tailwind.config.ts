@@ -28,7 +28,7 @@ const config: Config = {
       },
       backdropBlur: {
         xs: '2px',
-      }
+      },
     },
   },
   plugins: [],
