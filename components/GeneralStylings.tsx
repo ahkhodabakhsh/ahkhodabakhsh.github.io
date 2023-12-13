@@ -29,7 +29,7 @@ const iconSizeObj:{inLine:SizeProp, standAlone:SizeProp} = {
 
 export const cards = {
   style:{
-    background:"linear-gradient(180deg, rgba(0,0,10,0.7) 0%, rgba(0,0,0,0.3) 60%)",
+    background:"linear-gradient(180deg, rgba(0,0,10,0.8) 0%, rgba(0,0,0,0.5) 60%)",
     boxShadow:'none',
     minHeight: '110px',
     display: 'flex',
