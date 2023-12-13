@@ -29,8 +29,9 @@ export default function AboutMe(){
                             <Typography variant={cards.content.variant} color={cards.content.color}>
                                 {resume.basics.description}
                             </Typography>
-                            <Button className="flex items-center justify-center mt-5"
-                                    sx={{ textTransform: 'none' }}
+                            <Box component="section"sx={{ pt:2 }}>
+                            <Button className="flex w-full items-center justify-center"
+                                    sx={{ textTransform: 'none'}}
                                     variant="outlined"
                                     href="https://ahkhodabakhsh.github.io">
                                 <Typography component="div" variant={cards.content.variant} color={cards.content.color}>
@@ -38,7 +39,7 @@ export default function AboutMe(){
                                     <span className="mx-2">ahkhodabakhsh.github.io</span>
                                 </Typography>
                             </Button>
-                            <Button className="flex items-center justify-center mt-5"
+                            <Button className="flex w-full items-center justify-center mt-5"
                                     sx={{ textTransform: 'none' }}
                                     variant="outlined"
                                     href="/">
@@ -48,6 +49,7 @@ export default function AboutMe(){
                                     <span className="mx-2">Curriculum vitae</span>
                                 </Typography>
                             </Button>
+                            </Box>
                         </Box>
                     </CardContent>
                 </Card>

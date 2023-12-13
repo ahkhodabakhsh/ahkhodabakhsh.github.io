@@ -30,25 +30,14 @@ export default function RootLayout({
       <body style={{ 
                      fontFamily: 'Roboto, sans-serif',
                      backgroundColor: "black",
-                    //  backgroundImage: "url('/BG-Tuned-Blur.jpg')",
-                    //  backgroundSize: "cover",
-                    //  backgroundRepeat: "no-repeat",
-                    //  backgroundAttachment: "fixed",
+                     backgroundImage: "url('/BG-Tuned-Blur-ds.jpg')",
+                     backgroundSize: "cover",
+                     backgroundRepeat: "no-repeat",
+                     backgroundAttachment: "fixed",
                     //  filter: "blur(5px)",
                      }}>
-        <div style={{ position: 'relative' }}>
-          <Image
-            src="/BG-Tuned-Blur-ds.jpg"            
-            fill
-            quality={100}
-            alt="Background image"
-            priority
-          />
-          <div style={{ position: 'relative' }}>
-            {children}
-            <SpeedInsights />
-          </div>
-        </div>
+        {children}
+        <SpeedInsights />
       </body>
     </html>
   )
