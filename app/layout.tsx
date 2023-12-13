@@ -1,4 +1,5 @@
-import type { Metadata } from 'next'
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata } from 'next';
 import "@fontsource/inter"; 
 import "@fontsource/roboto"; 
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -45,6 +46,7 @@ export default function RootLayout({
           />
           <div style={{ position: 'relative' }}>
             {children}
+            <SpeedInsights />
           </div>
         </div>
       </body>
