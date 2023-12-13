@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 
 
 function Contact({href, icon, text}:{href:string, icon:any, text:string}){
+    console.log(cards.theme.typography)
     return(
         <ListItem disablePadding>
             <motion.div whileHover={cards.linkHoverAnim} style={{paddingLeft:10, width:"100%"}}>
@@ -68,43 +69,6 @@ export default function ContactInfo(){
                                      icon={faEnvelope}
                                      text="khodabakhsh@ae.sharif.edu"/>
                         </List>
-
-                        {/* <Typography variant={cards.content.variant} color={cards.content.color}>
-                            <motion.a href="https://join.skype.com/invite/OiDAcveMp2uC"
-                                      whileHover={cards.linkHoverAnim}>
-                                <FontAwesomeIcon icon={faSkype}
-                                                 size={cards.iconSize.inLine}/>
-                                <span className="mx-2">Skype</span>
-                            </motion.a>
-                        </Typography>
-
-                        <Typography variant={cards.content.variant} color={cards.content.color}>
-                            <motion.a href="https://t.me/AHKH0"
-                                      whileHover={cards.linkHoverAnim}>
-                                <FontAwesomeIcon icon={faTelegram}
-                                                 size={cards.iconSize.inLine}/>
-                                <span className="mx-2">Telegram</span>
-                            </motion.a>
-                        </Typography>
-                        
-                        <Typography variant={cards.content.variant} color={cards.content.color}>
-                            <motion.a href="mailto:a.h.khodabakhsh@gmail.com"
-                                      whileHover={cards.linkHoverAnim}>
-                                <FontAwesomeIcon icon={faGoogle}
-                                                 size={cards.iconSize.inLine}/>
-                                <span className="mx-2">a.h.khodabakhsh</span>
-                            </motion.a>
-                        </Typography>
-
-                        <Typography variant={cards.content.variant} color={cards.content.color}>
-                            <motion.a href="mailto:khodabakhsh@ae.sharif.edu"
-                                      whileHover={cards.linkHoverAnim}>
-                                <FontAwesomeIcon icon={faEnvelope}
-                                                 size={cards.iconSize.inLine}/>
-                                <span className="mx-2">khodabakhsh@ae.sharif.edu</span>
-                            </motion.a>
-                        </Typography> */}
-
                     </CardContent>
                 </Card>
             </motion.div>

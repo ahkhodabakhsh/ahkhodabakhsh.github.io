@@ -16,6 +16,7 @@ export default function Home() {
         <ParticlesBackground />
       </Box>
       <Container  id="background-overlay"
+                  maxWidth={false}
                   sx={{
                       width:"100vw",
                       height:"100vh",
