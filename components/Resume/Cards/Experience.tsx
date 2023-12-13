@@ -73,7 +73,7 @@ export default function Experience(){
                 whileTap={cards.motion.tap}>
                 <Card
                     sx={{...cards.style,
-                            minHeight:"420px"}}>
+                            minHeight:"440px"}}>
                     <CardContent>
                         <Typography gutterBottom
                                     variant={cards.title.variant}
