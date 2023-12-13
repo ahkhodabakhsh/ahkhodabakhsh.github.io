@@ -18,7 +18,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 
 
 function Contact({href, icon, text}:{href:string, icon:any, text:string}){
-    console.log(cards.theme.typography)
     return(
         <ListItem disablePadding>
             <motion.div whileHover={cards.linkHoverAnim} style={{paddingLeft:10, width:"100%"}}>

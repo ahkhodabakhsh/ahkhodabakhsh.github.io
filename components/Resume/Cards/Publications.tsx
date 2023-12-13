@@ -12,6 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { faFeather } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { StringOptions } from "sass";
 
 const publications = [
     {
@@ -39,13 +40,13 @@ const publications = [
 
 type Publication = {
     publicationCitation:string;
-    DOI:string;
+    DOI:String | null;
 }
 
 function PaperInfo({pub}:{pub:Publication}){
     return(
         <ListItem disablePadding>
-            <ListItemButton href={"https://www.doi.org/"+pub.DOI} sx={{ borderRadius:2, }}>
+            <ListItemButton href={pub.DOI===null ? "" : "https://www.doi.org/"+pub.DOI} sx={{ borderRadius:2, }}>
                 <ListItemIcon>
                     <FontAwesomeIcon icon={faFeather}/>
                 </ListItemIcon>
@@ -56,7 +57,7 @@ function PaperInfo({pub}:{pub:Publication}){
                         </Typography>}
                     secondary={
                         <Typography variant={cards.content.variant} color={cards.content.color}>
-                            DOI: {pub.DOI}
+                            DOI: {pub.DOI===null ? "NA" : pub.DOI}
                         </Typography>
                     }
                 />
