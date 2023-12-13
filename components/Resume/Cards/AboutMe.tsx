@@ -1,6 +1,7 @@
 import resume from "@/data/resume.json";
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -29,27 +30,31 @@ export default function AboutMe(){
                             <Typography variant={cards.content.variant} color={cards.content.color}>
                                 {resume.basics.description}
                             </Typography>
-                            <Box component="section"sx={{ pt:2 }}>
-                            <Button className="flex w-full items-center justify-center"
-                                    sx={{ textTransform: 'none'}}
-                                    variant="outlined"
-                                    href="https://ahkhodabakhsh.github.io">
-                                <Typography component="div" variant={cards.content.variant} color={cards.content.color}>
-                                    <FontAwesomeIcon icon={faHome} />
-                                    <span className="mx-2">ahkhodabakhsh.github.io</span>
-                                </Typography>
-                            </Button>
-                            <Button className="flex w-full items-center justify-center mt-5"
-                                    sx={{ textTransform: 'none' }}
-                                    variant="outlined"
-                                    href="/">
-                                {/* <<TODO>> "Not implemented yet, will be available soon"*/}
-                                <Typography component="div" variant={cards.content.variant} color={cards.content.color}>
-                                    <FontAwesomeIcon icon={faPaperclip} />
-                                    <span className="mx-2">Curriculum vitae</span>
-                                </Typography>
-                            </Button>
-                            </Box>
+                            <Grid container direction="column" sx={{ pt:2 }}>
+                                <Grid item xs={12}>
+                                    <Button className="flex w-full items-center justify-center"
+                                            sx={{ textTransform: 'none'}}
+                                            variant="outlined"
+                                            href="https://ahkhodabakhsh.github.io">
+                                        <Typography component="div" variant={cards.content.variant} color={cards.content.color}>
+                                            <FontAwesomeIcon icon={faHome} />
+                                            <span className="mx-2">ahkhodabakhsh.github.io</span>
+                                        </Typography>
+                                    </Button>
+                                </Grid>
+                                <Grid item xs={12} sx={{ marginTop:2, }}>
+                                    <Button className="flex w-full items-center justify-center"
+                                            sx={{ textTransform: 'none' }}
+                                            variant="outlined"
+                                            href="/">
+                                        {/* <<TODO>> "Not implemented yet, will be available soon"*/}
+                                        <Typography component="div" variant={cards.content.variant} color={cards.content.color}>
+                                            <FontAwesomeIcon icon={faPaperclip} />
+                                            <span className="mx-2">Curriculum vitae</span>
+                                        </Typography>
+                                    </Button>
+                                </Grid>
+                            </Grid>
                         </Box>
                     </CardContent>
                 </Card>
