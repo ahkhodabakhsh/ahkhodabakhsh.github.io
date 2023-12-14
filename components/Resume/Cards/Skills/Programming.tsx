@@ -2,32 +2,38 @@ import SkillChart from './SkillChart';
 
 const data = [
   {
-    skill: "C/C++",
+    skillShortName: "C/C++",
+    skillFullName: "C/C++",
     level: 90,
     fullMark: 100,
   },
   {
-    skill: "C#",
+    skillShortName: "C#",
+    skillFullName: "C#",
     level: 85,
     fullMark: 100,
   },
   {
-    skill: "Python",
+    skillShortName: "Py",
+    skillFullName: "Python",
     level: 100,
     fullMark: 100,
   },
   {
-    skill: "JavaScript",
+    skillShortName: "JS",
+    skillFullName: "JavaScript",
     level: 85,
     fullMark: 100,
   },
   {
-    skill: "Julia",
+    skillShortName: "jl",
+    skillFullName: "Julia",
     level: 80,
     fullMark: 100,
   },
   {
-    skill: "MATLAB",
+    skillShortName: "MATLAB",
+    skillFullName: "MATLAB",
     level: 100,
     fullMark: 100,
   },

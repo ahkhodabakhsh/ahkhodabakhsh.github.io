@@ -2,27 +2,32 @@ import SkillChart from './SkillChart';
 
 const data = [
   {
-    skill: "Full-Stack Web",
+    skillShortName: "Web",
+    skillFullName: "Full-Stack Web Development",
     level: 86,
     fullMark: 100,
   },
   {
-    skill: "Embedded Systems",
+    skillShortName: "Embedded",
+    skillFullName: "Embedded Systems",
     level: 94,
     fullMark: 100,
   },
   {
-    skill: "Parallel Computing",
+    skillShortName: "ParaComp",
+    skillFullName: "Parallel Computing",
     level: 74,
     fullMark: 100,
   },
   {
-    skill: "Distributed Computing",
+    skillShortName: "DistComp",
+    skillFullName: "Distributed Computing",
     level: 70,
     fullMark: 100,
   },
   {
-    skill: "Numerical Optimization",
+    skillShortName: "Optim",
+    skillFullName: "Numerical Optimization",
     level: 96,
     fullMark: 100,
   },

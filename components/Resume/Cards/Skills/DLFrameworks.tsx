@@ -2,22 +2,26 @@ import SkillChart from './SkillChart';
 
 const data = [
   {
-    skill: "TensorFlow",
+    skillShortName: "TF",
+    skillFullName: "TensorFlow",
     level: 95,
     fullMark: 100,
   },
   {
-    skill: "pyTorch",
+    skillShortName: "pyTorch",
+    skillFullName: "PyTorch",
     level: 85,
     fullMark: 100,
   },
   {
-    skill: "MATLAB",
+    skillShortName: "MATLAB",
+    skillFullName: "MATLAB",
     level: 90,
     fullMark: 100,
   },
   {
-    skill: "Flux",
+    skillShortName: "Flux",
+    skillFullName: "Flux",
     level: 80,
     fullMark: 100,
   },
