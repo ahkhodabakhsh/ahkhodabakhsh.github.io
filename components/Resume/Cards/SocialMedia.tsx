@@ -2,8 +2,7 @@ import resume from "@/data/resume.json";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { createTheme, ThemeProvider } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ThemeProvider } from "@mui/material";
 import { motion } from "framer-motion";
 import { cards } from "@/components/GeneralStylings";
 import { faGithub,
@@ -17,8 +16,8 @@ export default function SocialMedia(){
     return(
         <ThemeProvider theme={cards.theme}>
             <motion.div
-                whileHover={{scale:1.05}}
-                whileTap={{scale:0.9}}>
+                whileHover={cards.motion.hover}
+                whileTap={cards.motion.tap}>
                 <Card
                     sx={cards.style}>
                     <CardContent>
