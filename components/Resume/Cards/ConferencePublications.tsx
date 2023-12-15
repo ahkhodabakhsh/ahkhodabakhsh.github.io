@@ -2,7 +2,7 @@ import resume from "@/data/resume.json";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { createTheme, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import { motion } from "framer-motion";
 import { cards } from "@/components/GeneralStylings";
 import List from '@mui/material/List';
@@ -12,7 +12,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { faFeather } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { StringOptions } from "sass";
 
 const publications = [
     {
@@ -64,9 +63,8 @@ export default function ConferencePublications(){
             <motion.div
                 whileHover={cards.motion.hover}
                 whileTap={cards.motion.tap}>
-                <Card
-                    sx={cards.style}>
-                    <CardContent>
+                <Card sx={cards.style}>
+                    <CardContent className="w-full">
                         <Typography gutterBottom
                                     variant={cards.title.variant}
                                     component="div"

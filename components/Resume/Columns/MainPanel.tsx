@@ -7,6 +7,8 @@ import TeachingExperience from "../Cards/TeachingExperience";
 import Copyright from "../Cards/Copyright";
 import ConferencePublications from "../Cards/ConferencePublications";
 import Languages from "../Cards/Languages";
+import ResearchInterests from "../Cards/ResearchInterests";
+import ResearchProjects from "../Cards/ResearchProjects";
 
 
 export default function MainPanel(){
@@ -24,13 +26,19 @@ export default function MainPanel(){
             <Grid item xs={12} id="main-panel-c4">
                 <TeachingExperience/>
             </Grid>
-            <Grid item xs={12} id="main-panel-c4">
+            <Grid item xs={12} id="main-panel-c5">
+                <ResearchInterests/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c6">
+                <ResearchProjects/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c7">
                 <ConferencePublications/>
             </Grid>
-            {/* <Grid item xs={12} id="main-panel-c4">
+            {/* <Grid item xs={12} id="main-panel-c8">
                 <Interests/>
             </Grid> */}
-            <Grid item xs={12} id="main-panel-c4">
+            <Grid item xs={12} id="main-panel-c8">
                 <Languages/>
             </Grid>
             <Grid item xs={12} id="copyright">

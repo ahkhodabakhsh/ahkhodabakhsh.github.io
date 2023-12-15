@@ -19,7 +19,7 @@ export default function Skills(){
                 whileTap={cards.motion.tap}
                 >
                 <Card sx={cards.style}>
-                    <CardContent>
+                    <CardContent className="w-full">
                         <Typography gutterBottom
                                     variant={cards.title.variant}
                                     component="div"
@@ -41,14 +41,6 @@ export default function Skills(){
                             </Grid>
                             
                         </Grid>
-                        
-                        {/* <Typography variant={cards.content.variant} color={cards.content.color}>
-                            Selected Reaserch Projects<br/><br/>
-                            Conference Papers<br/><br/>
-                            Language<br/><br/>
-                            Research Interest
-                            Scopus profile
-                        </Typography> */}
                     </CardContent>
                 </Card>
             </motion.div>
