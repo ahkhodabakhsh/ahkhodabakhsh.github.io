@@ -41,7 +41,7 @@ type ResearchInterests = {
 
 function ResearchInterestInfo({interest}:{interest:ResearchInterests}){
     return(
-        <ListItem>
+        <ListItem disablePadding>
             <ListItemButton sx={{ borderRadius:2, }}>
                 <ListItemIcon>
                     <FontAwesomeIcon icon={faThumbTack}/>

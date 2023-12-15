@@ -46,8 +46,7 @@ export default function AboutMe(){
                                     <Button className="flex w-full items-center justify-center"
                                             sx={{ textTransform: 'none' }}
                                             variant="outlined"
-                                            href="/">
-                                        {/* <<TODO>> "Not implemented yet, will be available soon"*/}
+                                            href="https://raw.githubusercontent.com/ahkhodabakhsh/ahkhodabakhsh.github.io/main/public/CV-Amir.H.Khodabakhsh.pdf">
                                         <Typography component="div" variant={cards.content.variant} color={cards.content.color}>
                                             <FontAwesomeIcon icon={faPaperclip} />
                                             <span className="mx-2">Curriculum vitae</span>
