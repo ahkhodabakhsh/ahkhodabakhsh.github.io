@@ -16,17 +16,17 @@ export default function Skills(){
         <ThemeProvider theme={cards.theme}>
             <motion.div
                 whileHover={cards.motion.hover}
-                whileTap={cards.motion.tap} className="w-full">
-                <Card sx={cards.style}
-                      className="w-full">
-                    <CardContent className="w-full">
+                whileTap={cards.motion.tap}
+                >
+                <Card sx={cards.style}>
+                    <CardContent>
                         <Typography gutterBottom
                                     variant={cards.title.variant}
                                     component="div"
                                     color={cards.title.color}>
                             Skills
                         </Typography>
-                        <Grid container spacing={0} className="w-full">
+                        <Grid container spacing={0}>
                             <Grid item xs={12} md={6} lg={3}>
                                 <SoftwareSkill/>
                             </Grid>
