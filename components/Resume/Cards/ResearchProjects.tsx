@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material";
 import { motion } from "framer-motion";
 import { cards } from "@/components/GeneralStylings";
 import Grid from '@mui/material/Grid';
+import Devider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -17,43 +18,52 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const projects = [
     {
         title:"Conceptualized and designed the smart wing idea for Gust Load Alleviation.",
+        keyKnowledge: "Deep Learning, Probability Density Distribution Time-Evolution, Fokker-Planck-Kolmogorov Equation, Monte Carlo Simulation, Model Predictive Control (MPC), Stochastic Differential Equation (SDE)",
     },
     {
         title:"Developed a software framework for Multidisciplinary Design Optimization (MDO), focusing on aircraft reliability.",
+        keyKnowledge: "Multidisciplinary Design Optimization (MDO), Surrogate Modeling (Gaussion Process Regression), Reliability Analysis, Uncertainty Quantification, Monte Carlo Simulation",
     },
     {
-        title:"Executed the design and implementation of a simulator for controlling satellite attitude. ",
+        title:"Executed the design and implementation of a simulator for attitude determination and controlling satellite attitude. ",
+        keyKnowledge: "Bayesian Inference, Nonlinear Filter (UKF and Particle Filter), Sliding-Mode Controller",
     },
     {
         title:"Optimized the design of a sub-scale supersonic wind tunnel as part of research experiences.",
+        keyKnowledge: "Multi-Objective Optimization, Genetic Algorithm, Computational Fluid Dynamics, Aerodynamics, Wind Tunnel Design",
     },
     {
         title:"Conceptualized and executed the construction of a reduced-scale supersonic wind tunnel.",
+        keyKnowledge: "Computer-Aided Design, Computational Fluid Dynamics, Aerodynamics, Wind Tunnel Design, Rapid Prototyping, Wire Cutting",
     },
     {
         title:"Implemented scheduling and control of a Stewart platform motion",
+        keyKnowledge: "Model Predictive Control, Hardware-in-the-Loop (HIL), Radial Basis Function (RBF)",
     },
     {
-        title:"Developed and implemented Aircraft Flight Simulator Technology (AFST) ",
+        title:"Developed and implemented Nonlinear Aircraft Flight Simulator Technology (NAFST) ",
+        keyKnowledge: "Model-Based Design, Auto-Code Generation, Aerodynamics, Flight Dynamics",
     },
     {
         title:"Conducted conceptual design, analysis, and detailed design of a Pneumatic Actuator",
+        keyKnowledge: "Fluid Dynamics, Computer-Aided Design",
     },
     {
         title:"Implemented an advanced satellite simulator",
+        keyKnowledge: "Model-Based Design, Systems Modeling Language (SysML), Real-Time Simulation, Hardware-in-the-Loop (HIL), Processor-in-the-Loop (PIL), Software-in-the-Loop (SIL), Rapid Control Prototyping (RCP)",
     },
 
 ];
 
 type ResearchProject = {
     title:string;
-    // supervisor:string | null;
+    keyKnowledge:string | null;
 }
 
 function ProjectInfo({project}:{project:ResearchProject}){
     return(
         <ListItem disablePadding>
-            <ListItemButton sx={{ borderRadius:2, }}>
+            <ListItemButton sx={{ borderRadius:2, minHeight:"190px"}}>
                 <ListItemIcon>
                     <FontAwesomeIcon icon={faFlask}/>
                 </ListItemIcon>
@@ -62,6 +72,20 @@ function ProjectInfo({project}:{project:ResearchProject}){
                         <Typography variant={cards.content.variant} color={cards.content.color}>
                             {project.title}
                         </Typography>
+                    }
+                    secondary={
+                        <Grid container>
+                            <Grid item xs={3}>
+                                <Typography variant={cards.content.variant} color={cards.content.color}>
+                                    <br /><b>Key Concepts </b>
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={8}>
+                                <Typography variant={cards.content.variant} color={cards.content.color}>
+                                    <br />{project.keyKnowledge}
+                                </Typography>
+                            </Grid>
+                        </Grid>
                     }
                 />
             </ListItemButton>
@@ -87,7 +111,12 @@ export default function ResearchProjects(){
                         <Grid item xs={12} md={6}>
                                 <List>
                                     {projects.map((prj, idx)=>(
-                                        (idx%2===0)?(<ProjectInfo project={prj} key={"prj"+idx}/>):(null)
+                                        (idx%2===0)?(
+                                            <>
+                                                <ProjectInfo project={prj} key={"prj"+idx}/>
+                                                <Devider sx={{ mt:2, mb:2, }}/>
+                                            </>
+                                            ):(null)
                                     ))
                                     }
                                 </List>
@@ -95,7 +124,12 @@ export default function ResearchProjects(){
                             <Grid item xs={12} md={6}>
                                 <List>
                                     {projects.map((prj, idx)=>(
-                                        (idx%2===1)?(<ProjectInfo project={prj} key={"prj"+idx}/>):(null)
+                                        (idx%2===1)?(
+                                            <>
+                                                <ProjectInfo project={prj} key={"prj"+idx}/>
+                                                <Devider sx={{ mt:2, mb:2, }}/>
+                                            </>
+                                            ):(null)
                                     ))
                                     }
                                 </List>

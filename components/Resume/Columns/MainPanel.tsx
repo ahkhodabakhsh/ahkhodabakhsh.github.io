@@ -21,19 +21,19 @@ export default function MainPanel(){
                 <Publications/>
             </Grid>
             <Grid item xs={12} id="main-panel-c3">
-                <Skills/>
+                <ConferencePublications/>
             </Grid>
             <Grid item xs={12} id="main-panel-c4">
-                <TeachingExperience/>
+                <Skills/>
             </Grid>
             <Grid item xs={12} id="main-panel-c5">
-                <ResearchInterests/>
-            </Grid>
-            <Grid item xs={12} id="main-panel-c6">
                 <ResearchProjects/>
             </Grid>
+            <Grid item xs={12} id="main-panel-c6">
+                <TeachingExperience/>
+            </Grid>
             <Grid item xs={12} id="main-panel-c7">
-                <ConferencePublications/>
+                <ResearchInterests/>
             </Grid>
             {/* <Grid item xs={12} id="main-panel-c8">
                 <Interests/>
