@@ -9,6 +9,7 @@ import ConferencePublications from "../Cards/ConferencePublications";
 import Languages from "../Cards/Languages";
 import ResearchInterests from "../Cards/ResearchInterests";
 import ResearchProjects from "../Cards/ResearchProjects";
+import SpecialCourses from "../Cards/SpecialCourses";
 
 
 export default function MainPanel(){
@@ -28,6 +29,9 @@ export default function MainPanel(){
             </Grid>
             <Grid item xs={12} id="main-panel-c5">
                 <ResearchProjects/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c5">
+                <SpecialCourses/>
             </Grid>
             <Grid item xs={12} id="main-panel-c6">
                 <TeachingExperience/>

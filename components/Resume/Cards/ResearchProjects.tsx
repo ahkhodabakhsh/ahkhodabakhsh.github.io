@@ -18,7 +18,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const projects = [
     {
         title:"Conceptualized and designed the smart wing idea for Gust Load Alleviation.",
-        keyKnowledge: "Deep Learning, Probability Density Distribution Time-Evolution, Fokker-Planck-Kolmogorov Equation, Monte Carlo Simulation, Model Predictive Control (MPC), Stochastic Differential Equation (SDE)",
+        keyKnowledge: "Deep Learning, Probability Density Distribution Time-Evolution, Fokker-Planck-Kolmogorov Equation, Monte Carlo Simulation, Model Predictive Control (MPC), Stochastic Differential Equation (SDE), Piezoelectric Benders",
+    },
+    {
+        title:"Nonlinear dynamics modeling using Physics-Informed Neural Networks (PINNs).",
+        keyKnowledge: "Physics-Informed Neural Networks, Deep Learning, Nonlinear Dynamics, Adaptive Sampling, Sensitivity Analysis, Surrogate Modeling",
     },
     {
         title:"Developed a software framework for Multidisciplinary Design Optimization (MDO), focusing on aircraft reliability.",
@@ -70,9 +74,10 @@ function ProjectInfo({project}:{project:ResearchProject}){
                 <ListItemText
                     primary={
                         <Typography variant={cards.content.variant} color={cards.content.color}>
-                            {project.title}
+                            <b>{project.title}</b>
                         </Typography>
                     }
+                    secondaryTypographyProps={{component:'div'}}
                     secondary={
                         <Grid container>
                             <Grid item xs={3}>
@@ -108,7 +113,7 @@ export default function ResearchProjects(){
                             Selected Research Projects
                         </Typography>
                         <Grid container>
-                        <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6}>
                                 <List>
                                     {projects.map((prj, idx)=>(
                                         (idx%2===0)?(
