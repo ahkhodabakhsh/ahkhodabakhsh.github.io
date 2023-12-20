@@ -30,19 +30,12 @@ const projects = [
     },
     {
         title:"Executed the design and implementation of a simulator for attitude determination and controlling satellite attitude. ",
-        keyKnowledge: "Bayesian Inference, Nonlinear Filter (UKF and Particle Filter), Sliding-Mode Controller",
+        keyKnowledge: "Bayesian Inference, Nonlinear Filter (UKF and Particle Filter), Sliding-Mode Controller, OpenCV",
     },
-    {
-        title:"Optimized the design of a sub-scale supersonic wind tunnel as part of research experiences.",
-        keyKnowledge: "Multi-Objective Optimization, Genetic Algorithm, Computational Fluid Dynamics, Aerodynamics, Wind Tunnel Design",
-    },
-    {
-        title:"Conceptualized and executed the construction of a reduced-scale supersonic wind tunnel.",
-        keyKnowledge: "Computer-Aided Design, Computational Fluid Dynamics, Aerodynamics, Wind Tunnel Design, Rapid Prototyping, Wire Cutting",
-    },
+    
     {
         title:"Implemented scheduling and control of a Stewart platform motion",
-        keyKnowledge: "Model Predictive Control, Hardware-in-the-Loop (HIL), Radial Basis Function (RBF)",
+        keyKnowledge: "ROS, Model Predictive Control, Hardware-in-the-Loop (HIL), Radial Basis Function (RBF)",
     },
     {
         title:"Developed and implemented Nonlinear Aircraft Flight Simulator Technology (NAFST) ",
@@ -56,7 +49,14 @@ const projects = [
         title:"Implemented an advanced satellite simulator",
         keyKnowledge: "Model-Based Design, Systems Modeling Language (SysML), Real-Time Simulation, Hardware-in-the-Loop (HIL), Processor-in-the-Loop (PIL), Software-in-the-Loop (SIL), Rapid Control Prototyping (RCP)",
     },
-
+    {
+        title:"Optimized the design of a sub-scale supersonic wind tunnel as part of research experiences.",
+        keyKnowledge: "Multi-Objective Optimization, Genetic Algorithm, Computational Fluid Dynamics, Aerodynamics, Wind Tunnel Design",
+    },
+    {
+        title:"Conceptualized and executed the construction of a reduced-scale supersonic wind tunnel.",
+        keyKnowledge: "Computer-Aided Design, Computational Fluid Dynamics, Aerodynamics, Wind Tunnel Design, Rapid Prototyping, Wire Cutting",
+    },
 ];
 
 type ResearchProject = {
@@ -117,10 +117,10 @@ export default function ResearchProjects(){
                                 <List>
                                     {projects.map((prj, idx)=>(
                                         (idx%2===0)?(
-                                            <>
-                                                <ProjectInfo project={prj} key={"prj"+idx}/>
+                                            <div key={"prjinfo"+idx}>
+                                                <ProjectInfo project={prj}/>
                                                 <Devider sx={{ mt:2, mb:2, }}/>
-                                            </>
+                                            </div>
                                             ):(null)
                                     ))
                                     }
@@ -130,10 +130,10 @@ export default function ResearchProjects(){
                                 <List>
                                     {projects.map((prj, idx)=>(
                                         (idx%2===1)?(
-                                            <>
-                                                <ProjectInfo project={prj} key={"prj"+idx}/>
+                                            <div key={"prjinfo"+idx}>
+                                                <ProjectInfo project={prj}/>
                                                 <Devider sx={{ mt:2, mb:2, }}/>
-                                            </>
+                                            </div>
                                             ):(null)
                                     ))
                                     }

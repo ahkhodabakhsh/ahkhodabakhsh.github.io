@@ -14,7 +14,7 @@ const sxObj = {
 const stickySxObj = {
   position: 'sticky',
   top: 0,
-  height: '100vh',
+  // height: '100vh', // this causes a compatibility issue, the sticky option is OK in firefox but does not work correctly in chrome and edge
 };
 
 export default function Resume() {

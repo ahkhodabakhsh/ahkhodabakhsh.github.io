@@ -30,16 +30,16 @@ export default function MainPanel(){
             <Grid item xs={12} id="main-panel-c5">
                 <ResearchProjects/>
             </Grid>
-            <Grid item xs={12} id="main-panel-c5">
-                <SpecialCourses/>
-            </Grid>
             <Grid item xs={12} id="main-panel-c6">
-                <TeachingExperience/>
-            </Grid>
-            <Grid item xs={12} id="main-panel-c7">
                 <ResearchInterests/>
             </Grid>
-            {/* <Grid item xs={12} id="main-panel-c8">
+            <Grid item xs={12} id="main-panel-c7">
+                <TeachingExperience/>
+            </Grid>
+            <Grid item xs={12} id="main-panel-c8">
+                <SpecialCourses/>
+            </Grid>
+            {/* <Grid item xs={12} id="main-panel-c9">
                 <Interests/>
             </Grid> */}
             <Grid item xs={12} id="main-panel-c8">

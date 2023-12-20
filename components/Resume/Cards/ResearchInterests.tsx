@@ -22,6 +22,9 @@ const interests = [
         researchArea:"Deep Learning and Artificial Intelligence",
     },
     {
+        researchArea:"Probabilistic Machine Learning and Bayesian Inference"
+    },
+    {
         researchArea:"Reinforcement Learning",
     },
     {
