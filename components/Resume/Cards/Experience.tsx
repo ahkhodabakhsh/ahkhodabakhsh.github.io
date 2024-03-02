@@ -32,8 +32,8 @@ const teachingExp = [
     {
         position: "Research Assistant - Space Systems Design Institute (SSDI)",
         institution: "K.N.Toosi University of Technology",
-        startDate: "2016",
-        endDate: "2011",
+        startDate: "2011",
+        endDate: "2016",
         topics: "Automatic Control Systems Design and Implementation, Multidisciplinary Design Optimization (MDO)",
     },
 ];

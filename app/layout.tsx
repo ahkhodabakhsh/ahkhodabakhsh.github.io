@@ -2,7 +2,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import "@fontsource/inter"; 
 import "@fontsource/roboto"; 
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import "@fontawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
